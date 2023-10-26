@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:wisata_candi_anggi/data/candi_data.dart';
+import 'package:wisata_candi_anggi/screens/detail_screen.dart';
+import 'package:wisata_candi_anggi/screens/profil_screens.dart';
+
+
 
 void main() {
   runApp(const MyApp());
@@ -16,16 +21,11 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: DetailScreen(),
+      home : ProfilScreen(),
+      // home: DetailScreen(candi: candiList[0]),
     );
   }
 }
 
-class DetailScreen extends StatelessWidget {
-  const DetailScreen({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return const Placeholder();
-  }
-}
+
