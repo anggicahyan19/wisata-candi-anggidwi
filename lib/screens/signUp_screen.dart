@@ -2,12 +2,12 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 class SignUpScreen extends StatefulWidget {
-  SignUpScreen ({super.key});
+  SignUpScreen({super.key});
 
   @override
   State<SignUpScreen> createState() => _SignUpScreenState();
 }
-class _SignInScreenState extends State<SignUpScreen> {
+class _SignUpScreenState extends State<SignUpScreen> {
   // TODO : 1. Deklarasi Variabel
   final TextEditingController _usernameController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
@@ -39,6 +39,7 @@ class _SignInScreenState extends State<SignUpScreen> {
                   ),
                 ),
                 // TODO : 5. Pasang TextFormField Nama Pengguna
+                SizedBox(height: 20),
                 TextFormField(
                   controller: _usernameController,
                   decoration: InputDecoration(
@@ -80,8 +81,8 @@ class _SignInScreenState extends State<SignUpScreen> {
                         _errorText = 'Password harus berisi lowercase';
                       }else if(!_passwordController.value.text.contains(RegExp(r'[0-9]'))){
                         _errorText = 'Password harus berisi angka';
-                      }else if(!passwordController.value.text.contains(RegExp(r'[/*.,]'))){
-                        errorText = 'Password harus berisi karakter spesial (/*.,)';
+                      }else if(!_passwordController.value.text.contains(RegExp(r'[/*.,]'))){
+                        _errorText = 'Password harus berisi karakter spesial (/*.,)';
                       }else if(
                       _passwordController.value.text.contains(_fullnameController.value.text) ||
                           _passwordController.value.text.contains(_usernameController.value.text)
@@ -92,12 +93,9 @@ class _SignInScreenState extends State<SignUpScreen> {
                       }
 
                     },
-                    child: Text('Sign In')),
+                    child: Text('Sign Up')),
                 // TODO : 8. Pasang TextButton Sign Up
                 SizedBox(height: 10),
-                TextButton(
-                    onPressed: (){},
-                    child: Text('Belum punya akun? Daftar di sini.')),
                 RichText(
                     text: TextSpan(
                         text: 'Belum punya akun?',
