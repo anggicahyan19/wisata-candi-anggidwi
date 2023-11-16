@@ -24,11 +24,12 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         padding: EdgeInsets.all(8.0),
         itemCount: candiList.length,
+          // TODO : 3. Buat Itemcard sebagai return dari gridview.builder
           itemBuilder: (context, index){
             Candi candi = candiList[index];
             return ItemCard(candi: candi);
           }),
-      // TODO : 3. Buat Itemcard sebagai return dari gridview.builder
+
     );
   }
 }
