@@ -12,7 +12,7 @@ class ItemCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO : 6. Implementasi routing ke Detailscreen
-    return GestureDetector(
+    return InkWell(
       onTap: (){
         Navigator.push(
             context,

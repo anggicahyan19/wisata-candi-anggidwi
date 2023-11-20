@@ -21,7 +21,7 @@ class  DetailScreen extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(horizontal :16),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(20),
-                    child: Image.asset('images/borobudur.jpeg',
+                    child: Image.asset('${candi.imageAsset}',
                       width: double.infinity,
                       height: 200,
                       fit: BoxFit.cover,),
