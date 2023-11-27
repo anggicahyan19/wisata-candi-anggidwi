@@ -25,8 +25,8 @@ class MyApp extends StatelessWidget {
       routes: {
         '/' : (context) => MainScreen(),
         // '/detail' : (context) => DetailScreen(candi: candi),
-        '/sign_in' : (context) => SignInScreen(),
-        '/sign_up' : (context) => SignUpScreen(),
+        '/signin' : (context) => SignInScreen(),
+        '/signup' : (context) => SignUpScreen(),
       },
       debugShowCheckedModeBanner: false,
       title: 'Wisata Candi',

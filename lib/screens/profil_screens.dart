@@ -16,12 +16,13 @@ class _ProfilScreenState extends State<ProfilScreen> {
 
   // TODO: 5. Implementasi fungsi singin
   void signIn () {
-    Navigator.pushNamed(
-      context, '/sign_in'
-    );
-    setState(() {
-      // isSignedIn = !isSignedIn;
-    });
+    // Navigator.pushNamed(
+    //   context, '/sign_in'
+    // );
+    // setState(() {
+    //   // isSignedIn = !isSignedIn;
+    // });
+    Navigator.pushNamed(context, '/signin');
   }
   // TODO: 6. Implementasi fungsi singout
   void signOut () {
